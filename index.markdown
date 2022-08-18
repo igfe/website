@@ -4,3 +4,5 @@
 
 # layout: home
 ---
+- [posts](posts.html)
+- [about](about.html)
