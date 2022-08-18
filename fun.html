@@ -1,0 +1,13 @@
+---
+title: fun
+---
+<h1>Recreation</h1>
+
+<ul>
+  {% for f in site.fun %}
+    <li>
+      <h2><a href="{{ f.url }}">{{ f.name }}</a></h2>
+      <p>{{ f.excerpt | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>

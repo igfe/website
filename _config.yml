@@ -34,6 +34,25 @@ plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 remote_theme: pages-themes/hacker@v0.2.0
+
+collections:
+  fun:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "fun"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "nav"
+
+# header_pages:
+#   - rumerica/index.md
+#   - about.md
 # plugins:
 
 # Exclude from processing.
