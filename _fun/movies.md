@@ -1,5 +1,5 @@
 ---
-name: Movies
+name: fun/movies
 ---
 List of favorite movies
 
