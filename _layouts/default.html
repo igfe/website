@@ -14,8 +14,10 @@
 
     <header>
       <div class="container">
-        <a id="a-title" href="{{ page.url | relative_url }}">
-          <h1>{{ page.url | replace: ".html", "/" }}</h1>
+          {% assign path = page.url | replace: ".html", "/" %}
+          {% assign parent = path | split: "/" | pop | join: "/"%}
+        <a id="a-title" href="{{ parent | relative_url }}">
+          <h1>{{ path }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
