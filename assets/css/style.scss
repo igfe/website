@@ -4,3 +4,7 @@
 @import "{{ site.theme }}";
 
 header h1:before { content: ""; font-size: 60px; }
+
+header h1 span { color: #6a9fb5; font-weight: bold; }
+
+/**/

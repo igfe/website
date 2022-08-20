@@ -21,7 +21,7 @@
 title: ignaz.io
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal website for Ignazio Ferreira
+  Domain hacker
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
@@ -40,6 +40,11 @@ collections:
     output: true
 
 defaults:
+  - scope:
+      path: "fun"
+      type: "fun"
+    values:
+      layout: "nav"
   - scope:
       path: ""
     values:
