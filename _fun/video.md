@@ -1,7 +1,7 @@
 ---
 name: video
 ---
-Youtube and other video creaters
+short-form
 
 # Youtube
 [fireship](https://youtube.com/c/Fireship/)

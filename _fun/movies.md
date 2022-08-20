@@ -1,7 +1,7 @@
 ---
 name: movies
 ---
-List of favorite movies
+favorite movies
 
 
 
