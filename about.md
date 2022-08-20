@@ -1,7 +1,7 @@
 ---
 title: about
 ---
-programmer, data nerd, trying to live a balanced life
+programming, data, etc
 
 ## links
 - [github](github.com/igfe)

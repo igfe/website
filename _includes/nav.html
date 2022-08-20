@@ -7,12 +7,14 @@
     </a>
   {% endfor %}
 </nav> -->
+<aside>
 <h3>ls:</h3>
-<ul>
+  <ul>
     {% for doc in site.pages %}
-        {% assign name = doc.name | remove: ".html" | remove: ".md" %}
-          {% if name.size != doc.name.size %}
-        <li><a href="{{ doc.url }}">{{ name }}</a></li>
-          {% endif %}
+      {% assign name = doc.name | remove: ".html" | remove: ".md" %}
+        {% if name.size != doc.name.size %}
+          <li><a href="{{ doc.url }}">{{ name }}</a></li>
+        {% endif %}
     {% endfor %}
-</ul>
+  </ul>
+</aside>

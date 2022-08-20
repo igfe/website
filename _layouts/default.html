@@ -6,31 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/assets/css/style.css">
     {% include head-custom.html %}
-
-{% seo %}
+    {% seo %}
   </head>
 
   <body>
-
-    <header>
-      <div class="container">
-          <!-- {% assign path = page.url | remove: ".html" %}
-          {% assign parent = path | split: "/" | pop | join: "/"%} -->
-        <a id="a-title" href="/">
-          <h1><span>ign@zio</span>:~{{ path }}<span>$</span></h1>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-
-      </div>
-    </header>
-    <aside>
-      {% include nav.html %}
-    </aside>
-
+    {% include header.html %}
+    {% include nav.html %}
     <div class="container">
-      <section id="main_content">
         {{ content }}
-      </section>
     </div>
   </body>
 </html>
