@@ -3,8 +3,6 @@ name: movies
 ---
 favorite movies
 
-
-
 And more text
 
 List of favorite movies:
