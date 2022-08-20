@@ -1,4 +1,5 @@
 ---
+title: waifu
 ---
 Thea
 - hi

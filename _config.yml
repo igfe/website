@@ -40,16 +40,12 @@ collections:
     output: true
 
 defaults:
-  - scope:
-      path: "fun"
-      type: "fun"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
     values:
-      layout: "nav"
-  - scope:
-      path: ""
-    values:
-      layout: "nav"
-
+      layout: "default"
+      
 # header_pages:
 #   - rumerica/index.md
 #   - about.md
