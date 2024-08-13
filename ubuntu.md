@@ -10,6 +10,7 @@ Just Some Documentation to bootstrap my ubuntu installations. In general I reins
 - MySQL server
 - python-is-python3
 - git
+- ncdu
 pip
 These packages are for interactive sessions, for projects I would use a venv with a requirements.txt
 - pandas
