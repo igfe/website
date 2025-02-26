@@ -2,6 +2,75 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/no/data/</loc>
+    <lastmod>2025-02-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/data/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/data/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/data/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="http://localhost:1313/no/data/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/no/data/plotly_demo/</loc>
+    <lastmod>2025-02-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/data/plotly_demo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/data/plotly_demo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/data/plotly_demo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="http://localhost:1313/no/data/plotly_demo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/no/</loc>
+    <lastmod>2025-02-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="no"
+                href="http://localhost:1313/no/"
+                />
+  </url><url>
     <loc>http://localhost:1313/no/posts/whoami/</loc>
     <xhtml:link
                 rel="alternate"
@@ -44,28 +113,6 @@
                 rel="alternate"
                 hreflang="no"
                 href="http://localhost:1313/no/categories/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/no/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/nl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="no"
-                href="http://localhost:1313/no/"
                 />
   </url><url>
     <loc>http://localhost:1313/no/posts/</loc>
