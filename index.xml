@@ -3,7 +3,7 @@
 &lt;p>&lt;em>Taps his trackpad. A pristine webpage fades onto the projector screen.&lt;/em>&lt;/p>
 &lt;p>&lt;strong>McDermott:&lt;/strong> I just launched my new portfolio. Blazing fast. Gatsby. Tailwind. Hosted on Vercel.&lt;/p></description></item><item><title>Simple plotly</title><link>https://ignaz.io/data/plotly_demo/</link><pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate><guid>https://ignaz.io/data/plotly_demo/</guid><description>&lt;head>
 &lt;!-- Plotly.js -->
-&lt;script src="https://cdn.plot.ly/plotly-latest.min.js">&lt;/script>
+&lt;script src="https://cdn.plot.ly/plotly-3.0.0.min.js" charset="utf-8">&lt;/script>
 &lt;/head>
 &lt;p>
 Simple &lt;a href="https://bit.ly/1Or9igj">plotly.js&lt;/a> demo
