@@ -18,7 +18,7 @@
   &lt;script src=&#34;https://cdn.plot.ly/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;p&gt;
-  Eenvoudige &lt;a href=&#34;https://bit.ly/1Or9igj&#34;&gt;plotly.js&lt;/a&gt; demo
+    Eenvoudige &lt;a href=&#34;https://bit.ly/1Or9igj&#34;&gt;plotly.js&lt;/a&gt; demo
 &lt;/p&gt;
 &lt;div id=&#34;myDiv&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
@@ -89,7 +89,7 @@
   
   Plotly.newPlot(&#39;myDiv&#39;, data, layout);
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;/script&gt;&lt;/p&gt;</description>
+&lt;p&gt;&amp;lt;/sc&lt;/p&gt;</description>
     </item>
     <item>
       <title>$ whoami</title>
