@@ -1,36 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>homepage on Ignaz.io</title><link>https://ignaz.io/</link><description>Recent content in homepage on Ignaz.io</description><generator>Hugo -- 0.145.0</generator><language>en</language><lastBuildDate>Mon, 03 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ignaz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Machine Learning Ecosystem</title><link>https://ignaz.io/posts/ml_ecosystem/</link><pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate><guid>https://ignaz.io/posts/ml_ecosystem/</guid><description>&lt;script>
 document.addEventListener("DOMContentLoaded", function () {
-// const baseUrl = document.querySelector("meta[property='og:url']")?.getAttribute("content")
-const baseUrl = document.querySelector("link[rel='canonical']")?.getAttribute("href")
-// container.getAttribute("data-baseurl"); // Get base URL from Hugo meta tags or fallback to data attribute
-const levels = [
-{ id: "devops", text: "DevOps", color: "#e76f51", url: '../../fields/devops/' },
-{ id: "data-engineering", text: "Data Engineering", color: "#264653", url: "https://ignaz.io/fields/data_engineering/" },
-{ id: "ml-engineering", text: "ML Engineering", color: "#2a9d8f", url: "https://ignaz.io/fields/ml_engineering/" },
-{ id: "business", text: "Business", color: "#f4a261", url: "../../fields/business/" },
-];
-const container = document.querySelector(".post-footer");
+const container = document.querySelector(".post-content");
 if (!container) return;
+const pyramidWrapper = document.createElement("div");
+pyramidWrapper.style.position = "relative";
+pyramidWrapper.style.width = "100%";
+pyramidWrapper.style.maxWidth = "300px";
+pyramidWrapper.style.margin = "20px auto";
+pyramidWrapper.style.padding = "10px";
+pyramidWrapper.style.display = "flex";
+pyramidWrapper.style.flexDirection = "column";
+pyramidWrapper.style.alignItems = "center";
+const levels = [
+{ id: "business", text: "Business", color: "#f4a261", url: '../../fields/business/' },
+{ id: "ml-engineering", text: "ML Engineering", color: "#2a9d8f", url: '../../fields/ml-engineering/' },
+{ id: "data-engineering", text: "Data Engineering", color: "#264653", url: '../../fields/data-engineering/' },
+{ id: "devops", text: "DevOps", color: "#e76f51", url: '../../fields/devops/' }
+];
 levels.forEach((level, index) => {
 const layer = document.createElement("a");
 layer.id = level.id;
 layer.textContent = level.text;
-layer.style.position = "absolute";
-layer.style.bottom = `${index * 60}px`;
-layer.style.left = "50%";
-layer.style.transform = "translateX(-50%)";
-layer.style.width = `${300 - index * 50}px`;
+layer.href = level.url;
+layer.style.display = "block";
+layer.style.width = "100%";
+layer.style.maxWidth = `${150 + index * 50}px`;
 layer.style.height = "50px";
 layer.style.backgroundColor = level.color;
-layer.style.color = "white";
+layer.style.color = "rgb(255, 255, 255)";
 layer.style.textAlign = "center";
 layer.style.lineHeight = "50px";
 layer.style.fontSize = "16px";
 layer.style.borderRadius = "5px";
 layer.style.cursor = "pointer";
-layer.href = level.url;
-container.prepend(layer);
+// layer.style.textDecoration = "none";
+layer.style.marginBottom = "7px";
+pyramidWrapper.appendChild(layer);
 });
+container.prepend(pyramidWrapper);
 });
 &lt;/script>
 &lt;p>Machine learning has transformed the business landscape by enabling scalable data analysis and data-driven decision-making. However, building the technology stack to turn raw data into actionable insights is no simple task.&lt;/p></description></item><item><title>New Website</title><link>https://ignaz.io/posts/new_site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/posts/new_site/</guid><description>&lt;p>&lt;em>The room is dimly lit. The air is thick with competition. A group of developers sits around a sleek, minimalist table, each armed with their laptops. Patrick Bateman, a sharply dressed full-stack developer, leans back in his chair, fingers steepled, waiting for his moment.&lt;/em>&lt;/p>
@@ -109,8 +116,8 @@ Plotly.newPlot('myDiv', data, layout);
 &lt;/script></description></item><item><title/><link>https://ignaz.io/posts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/posts/</guid><description/></item><item><title/><link>https://ignaz.io/tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/tools/</guid><description/></item><item><title>$ whoami</title><link>https://ignaz.io/posts/whoami/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/posts/whoami/</guid><description>&lt;p>I&amp;rsquo;m a data professional passionate the future. While I spend most of my professional time editing yaml config files, my deeper passion lies in computational analysis and data visualization.&lt;/p>
 &lt;p>I make frequent use of modern LLMs to accomplish my work, while being mindful of acquiring actual skills and not just outsourcing all my thinking to a robot.&lt;/p>
 &lt;p>My hobbies include fitness (running and mountainbiking), stock trading, playing video game sound tracks on classical guitar, and being attacked by a small human.&lt;/p></description></item><item><title>archivetitle</title><link>https://ignaz.io/archive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/archive/</guid><description>&lt;p>This is an archive&lt;/p>
-&lt;p>Archive content&lt;/p></description></item><item><title>Data Engineering</title><link>https://ignaz.io/fields/data_engineering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/fields/data_engineering/</guid><description>&lt;p>AI is only as good as the data it learns from. Data engineering transforms raw, messy, and unstructured data into clean, structured, and accessible formats. ETL pipelines, data lakes, and cloud storage enable businesses to make real-time decisions, detect trends, and automate workflows—a necessity for personalization, fraud detection, and operational efficiency.&lt;/p></description></item><item><title>DevOps</title><link>https://ignaz.io/fields/devops/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/fields/devops/</guid><description>&lt;p>DevOps ensures scalable, secure, and resilient infrastructure for AI/ML workloads. By implementing CI/CD pipelines, infrastructure-as-code (IaC), and cloud automation, businesses reduce downtime, improve security posture, and enable rapid innovation. Without DevOps, AI models remain trapped in research notebooks rather than production-ready systems.&lt;/p></description></item><item><title>grep</title><link>https://ignaz.io/tools/grep/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/tools/grep/</guid><description>&lt;h1 id="linux-grep">Linux &lt;code>grep&lt;/code>&lt;/h1>
+&lt;p>Archive content&lt;/p></description></item><item><title>Business</title><link>https://ignaz.io/fields/business/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/fields/business/</guid><description>&lt;p>AI is only as good as the data it learns from. Data engineering transforms raw, messy, and unstructured data into clean, structured, and accessible formats. ETL pipelines, data lakes, and cloud storage enable businesses to make real-time decisions, detect trends, and automate workflows—a necessity for personalization, fraud detection, and operational efficiency.&lt;/p></description></item><item><title>Data Engineering</title><link>https://ignaz.io/fields/data-engineering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/fields/data-engineering/</guid><description>&lt;p>AI is only as good as the data it learns from. Data engineering transforms raw, messy, and unstructured data into clean, structured, and accessible formats. ETL pipelines, data lakes, and cloud storage enable businesses to make real-time decisions, detect trends, and automate workflows—a necessity for personalization, fraud detection, and operational efficiency.&lt;/p></description></item><item><title>DevOps</title><link>https://ignaz.io/fields/devops/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/fields/devops/</guid><description>&lt;p>DevOps ensures scalable, secure, and resilient infrastructure for AI/ML workloads. By implementing CI/CD pipelines, infrastructure-as-code (IaC), and cloud automation, businesses reduce downtime, improve security posture, and enable rapid innovation. Without DevOps, AI models remain trapped in research notebooks rather than production-ready systems.&lt;/p></description></item><item><title>grep</title><link>https://ignaz.io/tools/grep/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/tools/grep/</guid><description>&lt;h1 id="linux-grep">Linux &lt;code>grep&lt;/code>&lt;/h1>
 &lt;p>The &lt;code>grep&lt;/code> command is a powerful tool for searching text in files and outputs. Below are some commonly used &lt;code>grep&lt;/code> commands and options.&lt;/p>
 &lt;h2 id="basic-usage">&lt;strong>Basic Usage&lt;/strong>&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>grep &lt;span style="color:#e6db74">&amp;#34;pattern&amp;#34;&lt;/span> filename
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Machine Learning Engineering</title><link>https://ignaz.io/fields/ml_engineering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/fields/ml_engineering/</guid><description>&lt;p>ML Engineering operationalizes AI by developing, deploying, and monitoring machine learning models at scale. This includes feature engineering, model serving, and MLOps practices to ensure AI solutions remain accurate, explainable, and compliant. Without ML Engineering, businesses risk stale models, biased predictions, and regulatory non-compliance.&lt;/p></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Machine Learning Engineering</title><link>https://ignaz.io/fields/ml-engineering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ignaz.io/fields/ml-engineering/</guid><description>&lt;p>ML Engineering operationalizes AI by developing, deploying, and monitoring machine learning models at scale. This includes feature engineering, model serving, and MLOps practices to ensure AI solutions remain accurate, explainable, and compliant. Without ML Engineering, businesses risk stale models, biased predictions, and regulatory non-compliance.&lt;/p></description></item></channel></rss>
